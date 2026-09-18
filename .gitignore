@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+vendor/
+target/
+.bundle/
+log/
+tmp/
+*.log
+bootstrap/cache/*.php
+storage/logs/*
