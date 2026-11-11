@@ -40,3 +40,9 @@ DB 設定を注入する場合は設定済み環境変数を `-e DATABASE_URL` �
 no-docker ブランチでは上記のネイティブ起動コマンドを使用する。
 DEParture の no-docker 経路は言語によって既知制限があり、失敗・Dockerfile 推奨案内も EV の確認対象。
 ローカルで動くことと DEParture 上のデプロイ成功は別途確認する。
+
+## fail-no-dockerfile
+
+このブランチは EV221 用。アプリは `no-docker` と同じで Dockerfile は置かない。
+`railway.json` でビルダーを `DOCKERFILE` に固定しているため、DEParture の再デプロイは Dockerfile 不在で失敗する。
+`main` と `no-docker` は変更していない。
