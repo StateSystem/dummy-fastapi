@@ -1,3 +1,5 @@
+# EV222: 起動時に失敗させるための構文エラー。本番ブランチには入れない。
+def (
 import os
 from fastapi import FastAPI
 from fastapi.responses import PlainTextResponse
